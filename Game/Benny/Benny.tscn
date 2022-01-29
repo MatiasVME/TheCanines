@@ -23,6 +23,16 @@ animations = [ {
 "loop": true,
 "name": "Walk",
 "speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "JumpUp",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "JumpDown",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -34,7 +44,7 @@ script = ExtResource( 10 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 1 )
-animation = "Idle"
+animation = "JumpDown"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 19 )
