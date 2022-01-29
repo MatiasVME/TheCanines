@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/light_shadow_light.png-7893275ab748f34e4deec2856b8ad768.stex"
+path="res://.import/light_shadow_light.png-0180681d150fe38dc3eeb9861bb3114e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Light/light_shadow_light.png"
-dest_files=[ "res://.import/light_shadow_light.png-7893275ab748f34e4deec2856b8ad768.stex" ]
+source_file="res://Game/Lantern/Light/light_shadow_light.png"
+dest_files=[ "res://.import/light_shadow_light.png-0180681d150fe38dc3eeb9861bb3114e.stex" ]
 
 [params]
 
