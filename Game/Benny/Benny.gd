@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var SPEED := 200.0
+var SPEED := 300.0
 
 var dir := Vector2.ZERO
 var move := Vector2.ZERO
