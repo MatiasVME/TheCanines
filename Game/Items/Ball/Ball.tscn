@@ -7,7 +7,7 @@ rough = true
 bounce = 0.1
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 51.0
+radius = 31.0644
 
 [node name="Ball" type="RigidBody2D"]
 mass = 61.15
@@ -17,4 +17,5 @@ physics_material_override = SubResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 1 )
