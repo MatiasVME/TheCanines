@@ -43,6 +43,7 @@ animations = [ {
 extents = Vector2( 46.5, 41.5 )
 
 [node name="Benny" type="KinematicBody2D"]
+collision_mask = 6
 script = ExtResource( 10 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
@@ -54,7 +55,5 @@ animation = "jumpDown"
 position = Vector2( 0, 19 )
 shape = SubResource( 2 )
 
-[node name="Raycast" type="RayCast2D" parent="."]
-visible = false
-position = Vector2( 0, 67 )
-enabled = true
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 86, 1 )

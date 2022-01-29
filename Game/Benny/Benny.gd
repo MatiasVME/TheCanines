@@ -77,3 +77,4 @@ func _physics_process(delta):
 	if state == JUMP and velocity.y > 0:
 		new_anim = 'jumpDown'
 	pass
+
