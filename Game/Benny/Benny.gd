@@ -5,6 +5,8 @@ var SPEED := 300.0
 var dir := Vector2.ZERO
 var move := Vector2.ZERO
 
+var is_jumping := false
+
 func _process(delta):
 	move.y += 10
 	
@@ -30,5 +32,11 @@ func _process(delta):
 		
 		if Input.is_action_just_pressed("ui_up"):
 			move.y = -400
+			$Sprite.play("JumpUp")
+	else:
+		if move.y > 0:
+			$Sprite.play("JumpDown")
+	
+	
 	
 	move_and_slide(move, Vector2.UP)
