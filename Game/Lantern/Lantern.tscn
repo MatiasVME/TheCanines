@@ -8,6 +8,7 @@ extents = Vector2( 400, 70 )
 
 [node name="Lantern" type="Area2D"]
 scale = Vector2( 0.1, 0.1 )
+collision_layer = 2
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -16,5 +17,6 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="Light" parent="." instance=ExtResource( 2 )]
+visible = false
 position = Vector2( 342, -5 )
 scale = Vector2( 3, 3 )
