@@ -11,12 +11,13 @@ config_version=4
 [application]
 
 config/name="The Canines"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Main="*res://Autoloads/Main.gd"
 Transition="*res://Autoloads/Transition.tscn"
+Main="*res://Autoloads/Main.gd"
 MusicManager="*res://Autoloads/MusicManager.tscn"
 
 [display]

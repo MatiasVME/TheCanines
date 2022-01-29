@@ -3,7 +3,8 @@ extends Node
 var current_music : AudioStreamPlayer
 
 enum Music {
-	MENU_SCREEN
+	MENU_SCREEN,
+	LIGHT_HOUSE
 }
 var music
 
@@ -16,6 +17,7 @@ func play(music_enum):
 	if current_music: current_music.stop()
 	
 	match music_enum:
-		Music.TITLE_SCREEN: current_music = $TitleScreen
+		Music.MENU_SCREEN: current_music = $MenuScreen
+		
 
 	current_music.play()
