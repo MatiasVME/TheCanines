@@ -16,8 +16,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Transition="*res://Autoloads/Transition.tscn"
 Main="*res://Autoloads/Main.gd"
+Transition="*res://Autoloads/Transition.tscn"
 MusicManager="*res://Autoloads/MusicManager.tscn"
 
 [display]

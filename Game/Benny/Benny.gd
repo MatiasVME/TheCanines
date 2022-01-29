@@ -11,10 +11,18 @@ var new_anim
 
 var velocity = Vector2()
 
+
 func _ready():
 	change_state(IDLE)
-	pass
-	
+
+
+func set_cam_limit(pos1 : Vector2, pos2 : Vector2):
+	$Camera.limit_left = pos1.x
+	$Camera.limit_right = pos2.x
+	$Camera.limit_top = pos1.y
+	$Camera.limit_bottom = pos2.y
+
+
 func change_state(new_state):
 	state = new_state
 	match state:
