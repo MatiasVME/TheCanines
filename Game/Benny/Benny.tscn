@@ -20,22 +20,22 @@
 animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ) ],
 "loop": true,
-"name": "Idle",
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "jumpDown",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ) ],
 "loop": true,
-"name": "Walk",
+"name": "walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
 "loop": true,
-"name": "JumpUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 15 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "JumpDown",
+"name": "jumpUp",
 "speed": 5.0
 } ]
 
@@ -48,7 +48,7 @@ script = ExtResource( 10 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 1 )
-animation = "JumpDown"
+animation = "jumpDown"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 19 )
