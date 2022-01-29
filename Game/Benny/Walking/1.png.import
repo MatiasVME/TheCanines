@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/walk-1.png-f8e1c08efcb3d56965be6b5449aac42d.stex"
+path="res://.import/1.png-e9218b03e2a40ab563a49155c3dcfb67.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Benny/Walking/walk-1.png"
-dest_files=[ "res://.import/walk-1.png-f8e1c08efcb3d56965be6b5449aac42d.stex" ]
+source_file="res://Game/Benny/Walking/1.png"
+dest_files=[ "res://.import/1.png-e9218b03e2a40ab563a49155c3dcfb67.stex" ]
 
 [params]
 
