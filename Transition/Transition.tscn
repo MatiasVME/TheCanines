@@ -37,11 +37,12 @@ void fragment(){
 shader = SubResource( 1 )
 shader_param/in_color = Color( 0.0156863, 0, 0.133333, 1 )
 shader_param/out_color = Color( 1, 1, 1, 1 )
-shader_param/in_out = 0.343
+shader_param/in_out = 0.0
 shader_param/position = 1.0
 shader_param/size = Vector2( 32, 32 )
 
 [node name="Transition" type="ColorRect"]
+pause_mode = 2
 material = SubResource( 2 )
 anchor_right = 1.0
 anchor_bottom = 1.0

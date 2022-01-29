@@ -8,12 +8,12 @@ func _process(delta):
 
 
 func change_scene(scene : String):
-	show()
+	start()
 	get_tree().paused = true
 	yield(get_tree().create_timer(2.0), "timeout")
 	get_tree().paused = false
 	get_tree().change_scene(scene)
-	hide()
+	finish()
 
 
 func start():
