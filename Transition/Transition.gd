@@ -1,6 +1,6 @@
 extends ColorRect
 
-var shader_pos
+var shader_pos := 0.0
 
 
 func _process(delta):
@@ -21,7 +21,7 @@ func start():
 		1,
 		-1.5, 
 		10,
-		Tween.TRANS_SINE,
+		Tween.TRANS_QUAD,
 		Tween.EASE_IN_OUT
 	)
 	$Tween.start()
