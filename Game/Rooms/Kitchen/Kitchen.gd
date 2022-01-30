@@ -16,4 +16,4 @@ func _on_HappyZones_body_entered(body):
 
 
 func _on_Exit_body_entered(body):
-	get_tree().change_scene("res://Ending/Ending.tscn")
+	Transition.change_scene("res://Ending/Ending.tscn")

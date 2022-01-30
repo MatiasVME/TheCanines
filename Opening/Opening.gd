@@ -6,9 +6,8 @@ func _ready():
 
 
 func _on_Anim_animation_finished():
-	get_tree().change_scene("res://Game/Rooms/Living/Living.tscn")
+	Transition.change_scene("res://Game/Rooms/Living/Living.tscn")
 	AudioManager.change_song(AudioManager.sad_song)
-	pass
 
 
 func _on_Anim_frame_changed():

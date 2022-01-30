@@ -13,4 +13,4 @@ func _ready():
 func _process(delta):
 	if active_exit:
 		if Input.is_action_just_pressed("ui_accept"):
-			get_tree().change_scene("res://MainScreen/Menu/MenuScreen.tscn")
+			Transition.change_scene("res://MainScreen/Menu/MenuScreen.tscn")

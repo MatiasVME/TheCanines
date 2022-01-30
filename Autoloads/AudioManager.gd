@@ -11,8 +11,7 @@ var audiosp = AudioStreamPlayer.new()
 func _ready():
 	add_child(audiosp)
 	audiosp.stream = intro_song
-	audiosp.volume_db = -10.0
-	audiosp.play()
+	audiosp.pause_mode = Node.PAUSE_MODE_PROCESS
 
 
 func change_song(song_name):

@@ -18,9 +18,10 @@
 extents = Vector2( 1298, 39 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 14.871, 1.16624 )
+extents = Vector2( 16.1987, 1.16624 )
 
 [sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 8.9619 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 2.83456, 0.978026 )
@@ -148,7 +149,7 @@ texture = ExtResource( 6 )
 position = Vector2( -114.144, -50.5699 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Estante/StaticBody2D"]
-position = Vector2( 60.9597, 9.3548 )
+position = Vector2( 77.5757, 9.3548 )
 scale = Vector2( 12.515, 10.5622 )
 shape = SubResource( 3 )
 
@@ -172,12 +173,12 @@ texture = ExtResource( 9 )
 [node name="StaticBody2D" type="StaticBody2D" parent="CajaBodega1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CajaBodega1/StaticBody2D"]
-position = Vector2( -0.000732422, -0.000183105 )
+position = Vector2( -0.000732422, 11.3572 )
 scale = Vector2( 12.9634, 10.9406 )
 shape = SubResource( 2 )
 
 [node name="Benny" parent="." instance=ExtResource( 2 )]
-position = Vector2( 253, -117 )
+position = Vector2( 350, 158 )
 
 [node name="EscaleraFrente" type="Sprite" parent="."]
 position = Vector2( 1539, 148 )
@@ -199,7 +200,7 @@ position = Vector2( -252.628, -323.402 )
 rotation = 1.0472
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EscaleraFrente/StaticBody2D3"]
-position = Vector2( 191.19, 55.2673 )
+position = Vector2( 183.483, 46.8801 )
 rotation = -1.0472
 scale = Vector2( 37.3144, 10.5622 )
 shape = SubResource( 4 )
@@ -210,7 +211,7 @@ rotation = 1.0472
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EscaleraFrente/StaticBody2D2"]
 position = Vector2( 210.29, 15.8799 )
-rotation = -0.785397
+rotation = -1.06589
 scale = Vector2( 12.515, 10.5622 )
 shape = SubResource( 4 )
 
@@ -219,7 +220,7 @@ position = Vector2( -156, -247 )
 rotation = 1.0472
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EscaleraFrente/StaticBody2D5"]
-position = Vector2( 273.695, 7.41931 )
+position = Vector2( 256.879, 3.00769 )
 rotation = -1.0472
 scale = Vector2( 12.515, 10.5622 )
 shape = SubResource( 4 )
@@ -229,7 +230,7 @@ position = Vector2( -177, -287 )
 rotation = 1.0472
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EscaleraFrente/StaticBody2D6"]
-position = Vector2( 229.332, -7.97144 )
+position = Vector2( 223.665, 15.3423 )
 rotation = -1.0472
 scale = Vector2( 12.515, 10.5622 )
 shape = SubResource( 4 )
@@ -245,23 +246,27 @@ anims/RESET = SubResource( 7 )
 anims/Start = SubResource( 6 )
 
 [node name="PilaDeRopa" type="Sprite" parent="."]
-position = Vector2( 720, 599 )
-scale = Vector2( 0.143056, 0.143056 )
+position = Vector2( 1114, 596 )
+scale = Vector2( 0.132327, 0.132327 )
 texture = ExtResource( 10 )
 
 [node name="Exit" type="Area2D" parent="."]
 position = Vector2( 1114, -74 )
 
 [node name="Collision" type="CollisionShape2D" parent="Exit"]
-position = Vector2( -4, -6 )
+position = Vector2( -4, -40 )
 shape = SubResource( 5 )
 
 [node name="HappyZones" parent="." instance=ExtResource( 11 )]
 position = Vector2( 545, 524 )
 
+[node name="HappyZones2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1618, 524 )
+
 [connection signal="happy_state" from="." to="Benny" method="_on_Basement_happy_state"]
 [connection signal="body_entered" from="Lantern" to="." method="_on_Lantern_body_entered"]
 [connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_entered" from="HappyZones" to="." method="_on_HappyZones_body_entered"]
+[connection signal="body_entered" from="HappyZones2" to="." method="_on_HappyZones_body_entered"]
 
 [editable path="Lantern"]

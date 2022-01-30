@@ -17,7 +17,7 @@ func _on_touch_lanter():
 		$Floor.queue_free()
 	
 	yield(get_tree().create_timer(2), "timeout")
-	get_tree().change_scene("res://Game/Rooms/Basement/Basement.tscn")
+	Transition.change_scene("res://Game/Rooms/Basement/Basement.tscn")
 
 
 func _on_HappyZones_body_entered(body):
