@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Game/Rooms/Basement/sotano_lienzo_sin_cajas.png" type="Texture" id=1]
 [ext_resource path="res://Game/Benny/Benny.tscn" type="PackedScene" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Game/Items/escalera_frente.png" type="Texture" id=8]
 [ext_resource path="res://Game/Items/caja_bodega_1.png" type="Texture" id=9]
 [ext_resource path="res://Game/Items/pila_de_ropa.png" type="Texture" id=10]
+[ext_resource path="res://Game/DetectorHappyItem/HappyZones.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Game/Items/HappyItems/Dish.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1298, 39 )
@@ -64,6 +66,9 @@ shape = SubResource( 1 )
 
 [node name="Pos2" type="Position2D" parent="CameraPoints"]
 position = Vector2( 2560, 720 )
+
+[node name="Dish" parent="." instance=ExtResource( 12 )]
+position = Vector2( 536, 577 )
 
 [node name="Estante" type="Sprite" parent="."]
 position = Vector2( 1771, 420 )
@@ -172,7 +177,12 @@ position = Vector2( 1114, -74 )
 position = Vector2( -4, -6 )
 shape = SubResource( 5 )
 
+[node name="HappyZones" parent="." instance=ExtResource( 11 )]
+position = Vector2( 545, 524 )
+
+[connection signal="happy_state" from="." to="Benny" method="_on_Basement_happy_state"]
 [connection signal="body_entered" from="Lantern" to="." method="_on_Lantern_body_entered"]
 [connection signal="area_entered" from="Exit" to="." method="_on_Exit_area_entered"]
+[connection signal="body_entered" from="HappyZones" to="." method="_on_HappyZones_body_entered"]
 
 [editable path="Lantern"]

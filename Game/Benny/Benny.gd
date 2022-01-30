@@ -6,7 +6,7 @@ export (int) var run_speed = 225
 export (int) var jump_speed = -425
 export (int) var gravity = 750
 
-enum {IDLE, WALK, JUMP, DEAD}
+enum {IDLE, WALK, JUMP, SAD, HAPPY}
 var state
 var anim
 var new_anim
@@ -34,8 +34,10 @@ func change_state(new_state):
 			new_anim = 'walk'
 		JUMP:
 			new_anim = 'jumpUp'
-		DEAD:
+		SAD:
 			pass
+		HAPPY:
+			new_anim = 'happy'
 	pass
 
 func start(pos):
@@ -82,7 +84,33 @@ func _physics_process(delta):
 	# move the player
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
+#	for idx in range(get_slide_count()):
+#		var collision = get_slide_collision(idx)
+#		if collision.collider.is_in_group('huesos'):
+#			$Hueso/Sound.play()
+	
 	if state == JUMP and is_on_floor():
 		change_state(IDLE)
 	if state == JUMP and velocity.y > 0:
 		new_anim = 'jumpDown'
+	pass
+	
+func happiness():
+	set_physics_process(false)
+	$Sprite.play('happy')
+	yield(get_tree().create_timer(3),"timeout")
+	set_physics_process(true)
+	pass
+
+func _on_Living_happy_state():
+	happiness()
+	pass # Replace with function body.
+
+func _on_Basement_happy_state():
+	happiness()
+	pass # Replace with function body.
+
+
+func _on_Kitchen_happy_state():
+	happiness()
+	pass # Replace with function body.

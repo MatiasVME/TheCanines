@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CreditsSong.wav-7bb7c1f60bc9bf01c8e24898d2496401.sample"
+
+[deps]
+
+source_file="res://Game/Sounds/CreditsSong.wav"
+dest_files=[ "res://.import/CreditsSong.wav-7bb7c1f60bc9bf01c8e24898d2496401.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

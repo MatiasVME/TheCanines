@@ -1,21 +1,23 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Game/Rooms/Living/Living-1.png" type="Texture" id=1]
 [ext_resource path="res://Game/Rooms/Living/Living-2.png" type="Texture" id=2]
 [ext_resource path="res://Game/Benny/Benny.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Game/Rooms/Living/Living.gd" type="Script" id=4]
+[ext_resource path="res://Game/Items/HappyItems/Hueso.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Game/Lantern/Lantern.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Game/DetectorHappyItem/HappyZones.tscn" type="PackedScene" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "Normal",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "Hole",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Normal",
 "speed": 5.0
 } ]
 
@@ -74,3 +76,15 @@ __meta__ = {
 [node name="Lantern" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1171, 516 )
 rotation = -2.61799
+
+[node name="Hueso" parent="." instance=ExtResource( 5 )]
+position = Vector2( 568, 562 )
+mass = 2.0
+
+[node name="HappyZones" parent="." instance=ExtResource( 7 )]
+position = Vector2( 570, 538 )
+
+[connection signal="happy_state" from="." to="Benny" method="_on_Living_happy_state"]
+[connection signal="body_entered" from="HappyZones" to="." method="_on_HappyZones_body_entered"]
+
+[editable path="Hueso"]
