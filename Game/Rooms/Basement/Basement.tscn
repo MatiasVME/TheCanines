@@ -1,8 +1,4 @@
-[gd_scene load_steps=5 format=2]
-
-[ext_resource path="res://Game/Rooms/Basement/sotano_lienzo.png" type="Texture" id=1]
-[ext_resource path="res://Game/Benny/Benny.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Game/Items/Ball/Ball.tscn" type="PackedScene" id=3]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Game/Rooms/Basement/sotano_lienzo.png" type="Texture" id=1]
 [ext_resource path="res://Game/Benny/Benny.tscn" type="PackedScene" id=2]
@@ -46,9 +42,6 @@ rotation = -1.57079
 position = Vector2( 1281, 682 )
 shape = SubResource( 1 )
 
-[node name="Ball" parent="." instance=ExtResource( 3 )]
-position = Vector2( 679, 497 )
-
 [node name="CameraPoints" type="Node2D" parent="."]
 
 [node name="Pos1" type="Position2D" parent="CameraPoints"]
@@ -57,7 +50,7 @@ position = Vector2( 679, 497 )
 position = Vector2( 1280, 720 )
 
 [node name="Lantern" parent="." instance=ExtResource( 3 )]
-position = Vector2( 720, 634 )
+position = Vector2( 601, 579 )
 
 [node name="KeyZone" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1042, 502 )

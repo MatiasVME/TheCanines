@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Benny",
+"language": "GDScript",
+"path": "res://Game/Benny/Benny.gd"
+}, {
+"base": "Area2D",
+"class": "Lantern",
+"language": "GDScript",
+"path": "res://Game/Lantern/Lantern.gd"
+} ]
+_global_script_class_icons={
+"Benny": "",
+"Lantern": ""
+}
+
 [application]
 
 config/name="The Canines"
@@ -19,6 +35,7 @@ config/icon="res://icon.png"
 Main="*res://Autoloads/Main.gd"
 Transition="*res://Autoloads/Transition.tscn"
 MusicManager="*res://Autoloads/MusicManager.tscn"
+Singals="*res://Autoloads/Singals.gd"
 
 [display]
 

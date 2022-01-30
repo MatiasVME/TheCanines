@@ -8,7 +8,7 @@ func _ready():
 
 func _on_Lantern_body_entered(body):
 	#Hacer que la linterna se posicione en el hocico del perro
-	$Lantern/Light.visible()
+#	$Lantern/Light.visible()
 	pass
 
 
