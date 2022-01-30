@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sotano_lienzo.png-23a3289c3d288c1c4ef7320b8b0f7761.stex"
+path="res://.import/3.png-d79e9a8712d331208bf79808f62499a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Rooms/Basement/sotano_lienzo.png"
-dest_files=[ "res://.import/sotano_lienzo.png-23a3289c3d288c1c4ef7320b8b0f7761.stex" ]
+source_file="res://Game/Items/Walking/3.png"
+dest_files=[ "res://.import/3.png-d79e9a8712d331208bf79808f62499a8.stex" ]
 
 [params]
 
