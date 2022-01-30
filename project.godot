@@ -21,15 +21,15 @@ _global_script_class_icons={
 [application]
 
 config/name="The Canines"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://MainScreen/Menu/MenuScreen.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Main="*res://Autoloads/Main.gd"
-MusicManager="*res://Autoloads/MusicManager.tscn"
-Signals="*res://Autoloads/Singals.gd"
+Signals="*res://Autoloads/Signals.gd"
 Transition="*res://Autoloads/TransitionEffect/Transition.tscn"
+AudioManager="*res://Autoloads/AudioManager.gd"
 
 [display]
 

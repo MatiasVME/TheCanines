@@ -56,9 +56,7 @@ position = Vector2( 601, 579 )
 position = Vector2( 1042, 502 )
 
 [connection signal="body_entered" from="Lantern" to="." method="_on_Lantern_body_entered"]
-[connection signal="area_entered" from="Lantern/Light/Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="body_entered" from="KeyZone" to="." method="_on_KeyZone_body_entered"]
 
 [editable path="Lantern"]
-[editable path="Lantern/Light"]
 [editable path="KeyZone"]
