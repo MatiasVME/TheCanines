@@ -1,16 +1,16 @@
 [gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://Game/Benny/Walking/5.png" type="Texture" id=1]
-[ext_resource path="res://Game/Benny/Walking/4.png" type="Texture" id=2]
-[ext_resource path="res://Game/Benny/Walking/2.png" type="Texture" id=3]
-[ext_resource path="res://Game/Benny/Walking/3.png" type="Texture" id=4]
-[ext_resource path="res://Game/Benny/Walking/1.png" type="Texture" id=5]
+[ext_resource path="res://Game/Items/Walking/5.png" type="Texture" id=1]
+[ext_resource path="res://Game/Items/Walking/4.png" type="Texture" id=2]
+[ext_resource path="res://Game/Items/Walking/2.png" type="Texture" id=3]
+[ext_resource path="res://Game/Items/Walking/3.png" type="Texture" id=4]
+[ext_resource path="res://Game/Items/Walking/1.png" type="Texture" id=5]
 [ext_resource path="res://Game/Benny/Idle/1.png" type="Texture" id=6]
 [ext_resource path="res://Game/Benny/Idle/4.png" type="Texture" id=7]
 [ext_resource path="res://Game/Benny/Idle/2.png" type="Texture" id=8]
 [ext_resource path="res://Game/Benny/Idle/3.png" type="Texture" id=9]
 [ext_resource path="res://Game/Benny/Benny.gd" type="Script" id=10]
-[ext_resource path="res://Game/Benny/Walking/6.png" type="Texture" id=11]
+[ext_resource path="res://Game/Items/Walking/6.png" type="Texture" id=11]
 [ext_resource path="res://Game/Benny/Salto/4.png" type="Texture" id=12]
 [ext_resource path="res://Game/Benny/Salto/2.png" type="Texture" id=13]
 [ext_resource path="res://Game/Benny/Salto/1.png" type="Texture" id=14]
@@ -32,7 +32,7 @@ animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
 "loop": true,
@@ -40,8 +40,8 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 46.5, 41.5 )
+[sub_resource type="CircleShape2D" id=2]
+radius = 44.1022
 
 [node name="Benny" type="KinematicBody2D"]
 collision_mask = 6

@@ -8,7 +8,7 @@
 bounce = 0.4
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 400, 70 )
+extents = Vector2( 394.556, 244.183 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 25, 7 )
@@ -66,7 +66,6 @@ shape = SubResource( 1 )
 position = Vector2( 210, 0 )
 scale = Vector2( 3, 3 )
 color = Color( 1, 1, 1, 1 )
-energy = 1.0
 shadow_enabled = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]
@@ -76,3 +75,5 @@ shape = SubResource( 4 )
 autoplay = "Idle"
 anims/Idle = SubResource( 6 )
 anims/RESET = SubResource( 7 )
+
+[connection signal="body_entered" from="Lantern" to="Lantern" method="_on_Lantern_body_entered"]

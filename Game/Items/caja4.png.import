@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/6.png-3316d576f18999ab6dff9cd416217a05.stex"
+path="res://.import/caja4.png-526c11a64b5a8aaabe934750b0b9837c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Benny/Walking/6.png"
-dest_files=[ "res://.import/6.png-3316d576f18999ab6dff9cd416217a05.stex" ]
+source_file="res://Game/Items/caja4.png"
+dest_files=[ "res://.import/caja4.png-526c11a64b5a8aaabe934750b0b9837c.stex" ]
 
 [params]
 
