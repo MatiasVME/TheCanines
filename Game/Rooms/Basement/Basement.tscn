@@ -26,8 +26,31 @@ collision_layer = 4
 position = Vector2( 1281, 682 )
 shape = SubResource( 1 )
 
+[node name="Floor2" type="StaticBody2D" parent="."]
+position = Vector2( -722, 682 )
+rotation = -1.57079
+
+[node name="Collision" type="CollisionShape2D" parent="Floor2"]
+position = Vector2( 1281, 682 )
+shape = SubResource( 1 )
+
+[node name="Floor3" type="StaticBody2D" parent="."]
+position = Vector2( 1918, 682 )
+rotation = -1.57079
+
+[node name="Collision" type="CollisionShape2D" parent="Floor3"]
+position = Vector2( 1281, 682 )
+shape = SubResource( 1 )
+
+[node name="CameraPoints" type="Node2D" parent="."]
+
+[node name="Pos1" type="Position2D" parent="CameraPoints"]
+
+[node name="Pos2" type="Position2D" parent="CameraPoints"]
+position = Vector2( 1280, 720 )
+
 [node name="Lantern" parent="." instance=ExtResource( 3 )]
-position = Vector2( 720, 634 )
+position = Vector2( 601, 579 )
 
 [node name="KeyZone" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1042, 502 )

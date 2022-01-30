@@ -8,9 +8,9 @@ extents = Vector2( 30, 30 )
 
 [node name="Light" type="Light2D"]
 scale = Vector2( 0.2, 0.2 )
+z_index = 1
 texture = ExtResource( 1 )
-color = Color( 1, 0.960784, 0, 1 )
-energy = 1.2
+color = Color( 0.937255, 1, 0.501961, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
