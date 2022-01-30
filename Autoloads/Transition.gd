@@ -4,16 +4,17 @@ var shader_pos := 0
 
 
 func _process(delta):
+	test()
 	material.set("shader_param/cutoff", shader_pos)
 	
 #	test() # Comentar esta linea cuando no se este testeando
 #
 #
-#func test():
-#	if Input.is_action_just_pressed("ui_accept"):
-#		start()
-#	if Input.is_action_just_pressed("ui_cancel"):
-#		finish()
+func test():
+	if Input.is_action_just_pressed("ui_accept"):
+		start()
+	if Input.is_action_just_pressed("ui_cancel"):
+		finish()
 
 
 func change_scene(scene : String):

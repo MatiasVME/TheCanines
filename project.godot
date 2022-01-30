@@ -26,10 +26,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Main="*res://Autoloads/Main.gd"
 Transition="*res://Autoloads/Transition.tscn"
-MusicManager="*res://Autoloads/MusicManager.tscn"
-Singals="*res://Autoloads/Singals.gd"
+Main="*res://Autoloads/Main.gd"
+AudioManager="*res://Autoloads/AudioManager.gd"
 
 [display]
 
