@@ -86,12 +86,3 @@ func _physics_process(delta):
 		change_state(IDLE)
 	if state == JUMP and velocity.y > 0:
 		new_anim = 'jumpDown'
-
-
-func add_light(lantern : Lantern):
-	$LightPoint.add_child(lantern)
-	lantern.position = Vector2.ZERO
-	lantern.get_node("Light").energy = 1.2
-	lantern.get_node("Light").scale.x = 2.0
-	lantern.rotation = 0
-	lantern.get_node("Anim").play("RESET")

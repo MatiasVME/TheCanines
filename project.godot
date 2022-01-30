@@ -13,15 +13,9 @@ _global_script_classes=[ {
 "class": "Benny",
 "language": "GDScript",
 "path": "res://Game/Benny/Benny.gd"
-}, {
-"base": "Area2D",
-"class": "Lantern",
-"language": "GDScript",
-"path": "res://Game/Lantern/Lantern.gd"
 } ]
 _global_script_class_icons={
-"Benny": "",
-"Lantern": ""
+"Benny": ""
 }
 
 [application]
