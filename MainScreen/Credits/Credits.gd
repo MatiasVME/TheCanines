@@ -12,3 +12,8 @@ func _process(delta):
 	if active_exit:
 		if Input.is_action_just_pressed("ui_accept"):
 			Transition.change_scene("res://MainScreen/Menu/MenuScreen.tscn")
+
+
+func _on_Exit_pressed():
+	if active_exit:
+		Transition.change_scene("res://MainScreen/Menu/MenuScreen.tscn")

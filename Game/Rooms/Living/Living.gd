@@ -3,6 +3,7 @@ extends Node2D
 signal happy_state
 
 var just_once = false
+var ot_cinematica := true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,4 +26,12 @@ func _on_HappyZones_body_entered(body):
 		$Hueso/Sound.play()
 		emit_signal("happy_state")
 		just_once = true
-	pass # Replace with function body.
+
+
+func _on_CinematicaCuadroDetector_body_entered(body):
+	if body is Benny and ot_cinematica:
+		$Benny.get_node("Camera").zoom = Vector2.ONE
+		$CinematicaCuadro.play()
+		yield(get_tree().create_timer(0.5), "timeout")
+		
+		ot_cinematica = false
