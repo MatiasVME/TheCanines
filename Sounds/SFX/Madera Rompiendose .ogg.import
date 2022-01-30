@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Madera Rompiendose .ogg-01e51a58ed3ca7a9486fc5acc4ef095e.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Madera Rompiendose .ogg"
+dest_files=[ "res://.import/Madera Rompiendose .ogg-01e51a58ed3ca7a9486fc5acc4ef095e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
