@@ -39,7 +39,7 @@ margin_top = 32.0
 margin_right = -32.0
 margin_bottom = 74.0
 custom_fonts/font = SubResource( 2 )
-text = "The homeless dog"
+text = "Benny Light"
 __meta__ = {
 "_edit_use_anchors_": false
 }

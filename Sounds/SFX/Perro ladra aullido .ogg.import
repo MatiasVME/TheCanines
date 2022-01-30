@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Perro ladra aullido .ogg-b8a557686caca43e1404f2033c929c98.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Perro ladra aullido .ogg"
+dest_files=[ "res://.import/Perro ladra aullido .ogg-b8a557686caca43e1404f2033c929c98.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

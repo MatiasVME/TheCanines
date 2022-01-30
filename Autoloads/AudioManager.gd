@@ -1,6 +1,8 @@
 extends Node
 
 var intro_song = preload("res://Sounds/BGM/Main Title .ogg")
+var sad_song = preload("res://Sounds/BGM/Sad House .ogg")
+
 var audiosp = AudioStreamPlayer.new()
 # Called when the node enters the scene tree for the first time.
 func _ready():

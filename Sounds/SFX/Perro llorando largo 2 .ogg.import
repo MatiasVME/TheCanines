@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Perro llorando largo 2 .ogg-8f5e02d9bebccb835d431c018fbcd223.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Perro llorando largo 2 .ogg"
+dest_files=[ "res://.import/Perro llorando largo 2 .ogg-8f5e02d9bebccb835d431c018fbcd223.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
