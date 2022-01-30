@@ -20,7 +20,7 @@ texture = ExtResource( 1 )
 centered = false
 
 [node name="Hueso2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 715, 550 )
+position = Vector2( 718, 606 )
 
 [node name="Benny" parent="." instance=ExtResource( 3 )]
 position = Vector2( 262, 507 )
@@ -33,7 +33,7 @@ position = Vector2( 69.5, -77.5 )
 shape = SubResource( 1 )
 
 [node name="Floor2" type="StaticBody2D" parent="."]
-position = Vector2( 40, -68 )
+position = Vector2( -83, -68 )
 rotation = 1.57079
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
