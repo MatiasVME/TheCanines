@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Impacto Madera Suave .ogg-884d689dc775ef99b40a44760a4d7f19.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Impacto Madera Suave .ogg"
+dest_files=[ "res://.import/Impacto Madera Suave .ogg-884d689dc775ef99b40a44760a4d7f19.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

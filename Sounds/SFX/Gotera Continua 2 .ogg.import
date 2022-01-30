@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Gotera Continua 2 .ogg-1c07a273eecea72fcb5ee7c210e5b1c5.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Gotera Continua 2 .ogg"
+dest_files=[ "res://.import/Gotera Continua 2 .ogg-1c07a273eecea72fcb5ee7c210e5b1c5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
