@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Carro Frenando .ogg-a01c9a32f7183ff52620418a77cf5a48.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Carro Frenando .ogg"
+dest_files=[ "res://.import/Carro Frenando .ogg-a01c9a32f7183ff52620418a77cf5a48.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

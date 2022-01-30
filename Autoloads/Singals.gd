@@ -1,4 +1,4 @@
 extends Node
 
 
-signal get_lantern()
+signal touch_lantern()

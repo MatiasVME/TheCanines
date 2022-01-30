@@ -28,7 +28,7 @@ config/icon="res://icon.png"
 
 Main="*res://Autoloads/Main.gd"
 MusicManager="*res://Autoloads/MusicManager.tscn"
-Singals="*res://Autoloads/Singals.gd"
+Signals="*res://Autoloads/Singals.gd"
 Transition="*res://Autoloads/TransitionEffect/Transition.tscn"
 
 [display]
