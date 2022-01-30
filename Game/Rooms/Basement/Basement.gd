@@ -6,5 +6,4 @@ func _ready():
 
 
 func _on_Exit_area_entered(area):
-#	get_tree().change_scene()
-	pass
+	get_tree().change_scene("res://Game/Rooms/Kitchen/Kitchen.tscn")
