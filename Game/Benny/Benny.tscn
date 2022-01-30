@@ -32,7 +32,7 @@ animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
 "loop": true,
@@ -40,8 +40,8 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 46.5, 41.5 )
+[sub_resource type="CircleShape2D" id=2]
+radius = 44.1022
 
 [node name="Benny" type="KinematicBody2D"]
 collision_mask = 6
