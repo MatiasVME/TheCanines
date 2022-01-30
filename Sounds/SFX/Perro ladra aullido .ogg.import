@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Perro ladra aullido .ogg-b8a557686caca43e1404f2033c9
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

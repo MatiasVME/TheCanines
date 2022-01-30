@@ -114,3 +114,8 @@ func _on_Basement_happy_state():
 func _on_Kitchen_happy_state():
 	happiness()
 	pass # Replace with function body.
+
+
+func _on_Sprite_animation_finished():
+	if $Sprite.animation == "happy":
+		change_state(IDLE)

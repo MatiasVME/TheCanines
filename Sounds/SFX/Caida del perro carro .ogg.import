@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Caida del perro carro .ogg-1a1d1051c30644a729c17cbc9
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

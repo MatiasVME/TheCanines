@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Gotera Pequeña 1 .ogg-56b24185e95fa03743820a4ad4a03
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

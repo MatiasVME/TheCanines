@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Impacto madera fuerte .ogg-7be3ec02d53cc4bb59ae4d8a8
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

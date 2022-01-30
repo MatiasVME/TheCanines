@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Perro enojado.ogg-ef74e4ccaed213fb5072ec3114d6a758.o
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

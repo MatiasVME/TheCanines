@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Gotera Continua 2 .ogg-1c07a273eecea72fcb5ee7c210e5b
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

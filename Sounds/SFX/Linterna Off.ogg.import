@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Linterna Off.ogg-262aa949e3a1fc7936bd99fb39c92304.og
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

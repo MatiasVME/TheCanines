@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Sotano Background.ogg-3c5a85a1d287330c88f7cb5dcac0d4
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

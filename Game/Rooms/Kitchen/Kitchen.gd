@@ -2,15 +2,10 @@ extends Node2D
 
 signal happy_state
 var just_once = false
-# Called when the node enters the scene tree for the first time.
+
+
 func _ready():
-	#$Benny.set_cam_limit($CameraPoints/Pos1.global_position, $CameraPoints/Pos2.global_position)
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	$Benny.set_cam_limit($CameraPoints/Pos1.global_position, $CameraPoints/Pos2.global_position)
 
 
 func _on_HappyZones_body_entered(body):
@@ -19,3 +14,7 @@ func _on_HappyZones_body_entered(body):
 		emit_signal("happy_state")
 		just_once = true
 	pass # Replace with function body.
+
+
+func _on_Exit_body_entered(body):
+	get_tree().change_scene("res://Ending/Ending.tscn")

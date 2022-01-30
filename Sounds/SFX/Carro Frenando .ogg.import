@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Carro Frenando .ogg-a01c9a32f7183ff52620418a77cf5a48
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Perro llorando largo 3 .ogg-56c01dac1ec58a55e08ee255
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

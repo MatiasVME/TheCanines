@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Impacto Madera Suave .ogg-884d689dc775ef99b40a44760a
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

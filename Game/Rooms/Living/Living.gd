@@ -20,9 +20,6 @@ func _on_touch_lanter():
 	get_tree().change_scene("res://Game/Rooms/Basement/Basement.tscn")
 
 
-
-
-
 func _on_HappyZones_body_entered(body):
 	if body.name == "Benny" and just_once == false:
 		$Hueso/Sound.play()

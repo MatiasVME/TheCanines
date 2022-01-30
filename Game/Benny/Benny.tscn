@@ -32,21 +32,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 17 ), ExtResource( 20 ), ExtResource( 24 ), ExtResource( 23 ) ],
-"loop": true,
-"name": "happy",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": true,
-"name": "jumpDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "jumpUp",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "walk",
@@ -55,6 +40,21 @@ animations = [ {
 "frames": [ ExtResource( 22 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "sad",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "jumpDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 20 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ) ],
+"loop": false,
+"name": "happy",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "jumpUp",
 "speed": 5.0
 } ]
 
@@ -90,3 +90,5 @@ visible = false
 texture = ExtResource( 16 )
 energy = 0.7
 shadow_enabled = true
+
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]

@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Madera Rompiendose .ogg-01e51a58ed3ca7a9486fc5acc4ef
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

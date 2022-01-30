@@ -182,7 +182,7 @@ position = Vector2( 545, 524 )
 
 [connection signal="happy_state" from="." to="Benny" method="_on_Basement_happy_state"]
 [connection signal="body_entered" from="Lantern" to="." method="_on_Lantern_body_entered"]
-[connection signal="area_entered" from="Exit" to="." method="_on_Exit_area_entered"]
+[connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_entered" from="HappyZones" to="." method="_on_HappyZones_body_entered"]
 
 [editable path="Lantern"]
