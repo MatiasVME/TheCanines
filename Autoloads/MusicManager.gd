@@ -9,7 +9,7 @@ enum Music {
 var music
 
 func play(music_enum):
-	if not Main.BGM or music_enum == music:
+	if not Main.BGM or int(music_enum) == music:
 		return
 	
 	music = music_enum

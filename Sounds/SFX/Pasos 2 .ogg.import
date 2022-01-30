@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Pasos 2 .ogg-37a6eae338ad3f8e4991e582f6a222f8.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Pasos 2 .ogg"
+dest_files=[ "res://.import/Pasos 2 .ogg-37a6eae338ad3f8e4991e582f6a222f8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

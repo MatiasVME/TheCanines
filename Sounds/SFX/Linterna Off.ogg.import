@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Linterna Off.ogg-262aa949e3a1fc7936bd99fb39c92304.oggstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/Linterna Off.ogg"
+dest_files=[ "res://.import/Linterna Off.ogg-262aa949e3a1fc7936bd99fb39c92304.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
