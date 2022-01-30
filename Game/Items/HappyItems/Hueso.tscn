@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Game/Items/hueso.png" type="Texture" id=1]
-[ext_resource path="res://Game/Sounds/01BeautifulFeeling.wav" type="AudioStream" id=2]
+[ext_resource path="res://Sounds/BGM/Happy.ogg" type="AudioStream" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 190, 70 )

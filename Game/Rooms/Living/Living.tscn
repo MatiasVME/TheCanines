@@ -82,6 +82,9 @@ rotation = -2.61799
 position = Vector2( 568, 562 )
 mass = 2.0
 
+[node name="Sound" parent="Hueso" index="2"]
+volume_db = 2.622
+
 [node name="HappyZones" parent="." instance=ExtResource( 7 )]
 position = Vector2( 570, 538 )
 
