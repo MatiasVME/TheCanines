@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://MainScreen/Menu/MenuBG.png" type="Texture" id=1]
-[ext_resource path="res://Sounds/BGM/Main Title .ogg" type="AudioStream" id=4]
 [ext_resource path="res://MainScreen/Menu/MenuScreen.gd" type="Script" id=5]
 
 [node name="MenuScreen" type="Control"]
@@ -47,10 +46,6 @@ margin_bottom = 548.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="MenuSong" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
-autoplay = true
 
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
 [connection signal="pressed" from="Credits" to="." method="_on_Credits_pressed"]

@@ -13,7 +13,6 @@ func _on_HappyZones_body_entered(body):
 		$Hueso2/Sound.play()
 		emit_signal("happy_state")
 		just_once = true
-	pass # Replace with function body.
 
 
 func _on_Exit_body_entered(body):

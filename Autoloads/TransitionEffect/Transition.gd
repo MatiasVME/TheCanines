@@ -1,23 +1,13 @@
 extends Node2D
 
 # Progreso de la transición
-var cutoff := 0.0
-
-var rand_textures := [
-	preload("res://Autoloads/TransitionEffect/Gradient-1.png"),
-	preload("res://Autoloads/TransitionEffect/Gradient-2.png")
-]
-var current_texture : Texture
-
-
-func _enter_tree():
-	randomize()
+var sposition = 1.0
 
 
 func _process(delta):
-	$Curtain.material.set("shader_param/cutoff", cutoff)
+	$Curtain.material.set("shader_param/sposition", sposition)
 	
-	#test() # Comentar esta linea cuando no se este testeando
+#	test() # Comentar esta linea cuando no se este testeando
 
 
 func test():
@@ -28,13 +18,11 @@ func test():
 
 
 func show(duration := 2.0):
-	set_random_texture()
-	
 	$Tween.interpolate_property(
 		self, 
-		"cutoff", 
-		0.0, 
+		"sposition", 
 		1.0, 
+		-1.5, 
 		duration, 
 		Tween.TRANS_QUINT, 
 		Tween.EASE_IN_OUT
@@ -43,25 +31,16 @@ func show(duration := 2.0):
 
 
 func hide(duration := 1.0):
-	set_random_texture()
-	
 	$Tween.interpolate_property(
 		self, 
-		"cutoff", 
+		"sposition", 
+		-1.5, 
 		1.0, 
-		0.0, 
 		duration, 
 		Tween.TRANS_QUINT, 
 		Tween.EASE_IN_OUT
 	)
 	$Tween.start()
-
-
-func set_random_texture():
-	current_texture = rand_textures[int(round(rand_range(0, rand_textures.size() - 1)))]
-	
-	$Curtain.texture = current_texture
-	$Curtain.material.set("shader_param/filter", current_texture)
 
 
 func change_scene(scene : String):

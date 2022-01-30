@@ -22,14 +22,14 @@ _global_script_class_icons={
 
 config/name="The Canines"
 run/main_scene="res://MainScreen/Menu/MenuScreen.tscn"
-config/icon="res://icon.png"
+config/icon="res://Game/Benny/Happy/4.png"
 
 [autoload]
 
 Main="*res://Autoloads/Main.gd"
 Signals="*res://Autoloads/Signals.gd"
-Transition="*res://Autoloads/TransitionEffect/Transition.tscn"
 AudioManager="*res://Autoloads/AudioManager.gd"
+Transition="*res://Autoloads/TransitionEffect/Transition.tscn"
 
 [display]
 

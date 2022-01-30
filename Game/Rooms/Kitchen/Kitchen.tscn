@@ -7,7 +7,7 @@
 [ext_resource path="res://Game/Rooms/Kitchen/Kitchen.gd" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 550, 45 )
+extents = Vector2( 637.5, 36.5 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 18.5, 69 )
@@ -29,7 +29,23 @@ position = Vector2( 262, 507 )
 position = Vector2( 571, 758 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1"]
-position = Vector2( 166, -86 )
+position = Vector2( 69.5, -77.5 )
+shape = SubResource( 1 )
+
+[node name="Floor2" type="StaticBody2D" parent="."]
+position = Vector2( 40, -68 )
+rotation = 1.57079
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
+position = Vector2( 69.5, -77.5 )
+shape = SubResource( 1 )
+
+[node name="Floor3" type="StaticBody2D" parent="."]
+position = Vector2( 1252, -68 )
+rotation = 1.57079
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3"]
+position = Vector2( 69.5, -77.5 )
 shape = SubResource( 1 )
 
 [node name="HappyZones" parent="." instance=ExtResource( 2 )]

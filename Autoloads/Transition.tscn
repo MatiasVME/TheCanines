@@ -1,16 +1,68 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Autoloads/Transition.gd" type="Script" id=1]
 [ext_resource path="res://Shaders/Transition.shader" type="Shader" id=2]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
-shader_param/progress = null
-shader_param/diamondPixelSize = 10.0
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends Node2D
+
+var shader_pos := 0
+
+
+func _process(delta):
+	test()
+	material.set(\"shader_param/cutoff\", shader_pos)
+	
+#	test() # Comentar esta linea cuando no se este testeando
+#
+#
+func test():
+	if Input.is_action_just_pressed(\"ui_accept\"):
+		start()
+	if Input.is_action_just_pressed(\"ui_cancel\"):
+		finish()
+
+
+func change_scene(scene : String):
+	start()
+	get_tree().paused = true
+	yield(get_tree().create_timer(2.0), \"timeout\")
+	get_tree().paused = false
+	finish()
+	get_tree().change_scene(scene)
+
+
+func start():
+	$Tween.interpolate_property(
+		self,
+		\"shader_pos\",
+		0.0,
+		1.0, 
+		1.5,
+		Tween.TRANS_QUAD,
+		Tween.EASE_IN_OUT
+	)
+	$Tween.start()
+
+
+func finish():
+	$Tween.interpolate_property(
+		self,
+		\"shader_pos\",
+		1.0,
+		0.0, 
+		1.5,
+		Tween.TRANS_QUAD,
+		Tween.EASE_IN_OUT
+	)
+	$Tween.start()
+"
 
 [node name="Transition" type="Node2D"]
 material = SubResource( 1 )
-script = ExtResource( 1 )
+script = SubResource( 2 )
 
 [node name="Background" type="ColorRect" parent="."]
 margin_right = 40.0
