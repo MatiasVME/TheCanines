@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+class_name Benny
+
 export (int) var run_speed = 225
 export (int) var jump_speed = -425
 export (int) var gravity = 750
@@ -84,5 +86,3 @@ func _physics_process(delta):
 		change_state(IDLE)
 	if state == JUMP and velocity.y > 0:
 		new_anim = 'jumpDown'
-	pass
-

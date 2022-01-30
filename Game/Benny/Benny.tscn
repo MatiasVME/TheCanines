@@ -23,11 +23,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
 "name": "jumpDown",
@@ -36,6 +31,11 @@ animations = [ {
 "frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "jumpUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 } ]
 
