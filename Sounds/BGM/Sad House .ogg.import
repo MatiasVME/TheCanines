@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sad House .ogg-0e4680f13ca3941fcd975a90b617671b.oggstr"
+
+[deps]
+
+source_file="res://Sounds/BGM/Sad House .ogg"
+dest_files=[ "res://.import/Sad House .ogg-0e4680f13ca3941fcd975a90b617671b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
